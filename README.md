@@ -1,18 +1,33 @@
 # mplus-stats-coach
 
-**墨流** · v1.0.0 · `agent`
+**Mplus 统计教练** · v1.0.0 · `agent`
 
-> An Mplus learning agent that explains syntax, reviews .inp code, interprets output, advises on model choice, and diagnoses warnings and errors, with every claim traceable to a source.
+> Guided Mplus syntax, modeling decisions and output reading
 
 
-Part of the [WorkBuddy Experts](https://github.com/Lucewalk/lucewalk-experts) collection — expert teams, agents and skills for the WorkBuddy AI assistant platform.
+Part of the [WorkBuddy Experts](https://github.com/Lucewalk/lucewalk-experts) collection.
 
 
 ## What it does
 
-- **mplus-syntax-lab** — Mplus syntax explanation, generation, and .inp code review — command blocks, model skeletons, estimator selection, and a zero-dependency sta
-- **mplus-output-clinic** — Mplus output interpretation and diagnostics — fixed fit-index threshold table, block-by-block reading frames, a 62-class warning taxonomy bu
-- **mplus-method-advisor** — Statistical method selection and academic reporting for Mplus — a data-structure decision tree that returns at most three candidate models w
+- **Syntax lab** — builds Mplus syntax with you, explaining every MODEL block
+- **Method advisor** — which model fits your design, and what it assumes
+- **Output clinic** — reads Mplus output with you: fit indices, estimator warnings, common errors
+
+## How it works
+
+- Three skills cover the full coaching loop: syntax-lab → method-advisor → output-clinic
+- Tuned for students who need to *defend* their modeling choices, not just run them
+
+## Agent roster
+
+| Agent | Role |
+|---|---|
+| `mplus-stats-coach` | Mplus 统计教练 - 墨流 |
+
+## Skills
+
+`mplus-method-advisor` · `mplus-output-clinic` · `mplus-syntax-lab`
 
 ## Install
 
@@ -20,10 +35,13 @@ Part of the [WorkBuddy Experts](https://github.com/Lucewalk/lucewalk-experts) co
 2. Unzip keeping the internal manifest structure intact;
 3. Import/register in WorkBuddy (custom connector → trust & enable).
 
+
 ## Version
 
-Current release: **v1.0.0** — see [CHANGELOG.md](CHANGELOG.md) if present, or the package manifest.
+Current release: **v1.0.0**. See the package manifest for details.
+
 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
